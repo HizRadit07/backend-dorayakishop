@@ -18,6 +18,14 @@ connection.once('open',()=>{
     console.log("MongoDB database connection established successfully");
 })
 
+const dorayakiRouter = require('./routes/dorayaki');
+const tokodorayakiRouter = require('./routes/toko-dorayaki');
+const stokRouter = require('./routes/stok');
+
+app.use('/dorayaki',dorayakiRouter);
+app.use('/toko-dorayaki',tokodorayakiRouter);
+app.use('/stok',stokRouter);
+
 app.listen(port, () =>{
     console.log(`Server is running on port: ${port}`);
 });

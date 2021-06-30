@@ -13,7 +13,8 @@ const stokSchema = new Schema({
     },
     jumlah:{
         type: Number,
-        required: true
+        required: true,
+        minimum: 0
     }
     }, {
         timestamps: true,
