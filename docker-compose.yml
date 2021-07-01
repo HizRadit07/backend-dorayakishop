@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+    product-service:
+        build: ./
+        volumes:
+            - ./
+        ports:
+            - 5001:80
