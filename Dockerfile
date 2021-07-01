@@ -1,12 +1,12 @@
 FROM node:14
-WORKDIR /usr/src/app
+WORKDIR /app
 # Install app dependencies
 # A wildcard is used to ensure both package.json AND package-lock.json are copied
 # where available (npm@5+)
-COPY package*.json ./
+COPY package*.json /app
 
 RUN npm install
 
-COPY . .
+COPY . /app
 
-CMD ["node", "server.js"]
+CMD ["npm", "start"]

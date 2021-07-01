@@ -1,9 +1,7 @@
 version: '3'
 
 services:
-    product-service:
-        build: ./
-        volumes:
-            - ./
+    api-server:
+        build: .
         ports:
-            - 5001:80
+            - 5000:5000
