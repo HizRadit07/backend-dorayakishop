@@ -53,3 +53,23 @@ API dapat dijalankan menggunakan docker atau dengan install manual npm package y
         api-server_1  | MongoDB database connection established successfully
        
 5. API dapat dijalankan dan dicoba menggunakan postman/software sejenis
+
+## Alternatif 2 Manual npm install
+1. Pastikan node.js dan npm sudah diinstall dan dapat dijalankan di mesin anda.
+2. Clone repositori ini dan masuk ke repositori
+3. Jalankan command berikut:
+
+       npm install
+       
+4. Tunggu sampai seluruh package sudah diinstall, lalu jalankan command berikut
+
+        npm start
+
+5. Jika benar, shell akan menunjukkan sebagai berikut:
+
+        Server is running on port: 5000
+        (node:14832) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+        (Use `node --trace-warnings ...` to show where the warning was created)
+        MongoDB database connection established successfully
+             
+6. API dapat dijalankan dan dicoba menggunakan postman/software sejenis
