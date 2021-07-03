@@ -12,5 +12,14 @@ Ada 3 endpoint utama untuk api ini, '/dorayaki' untuk operasi dorayaki, '/toko-d
 * '/:id', method DELETE: menghapus dorayaki sesuai id
 * '/update/:id', method POST: memperbarui(update) dorayaki sesuai id
 
-struktur dorayaki: {rasa : String, deskripsi : String, gambar : String}
+struktur dorayaki: {rasa : String, deskripsi : String, gambar : String} <br/>
 note: gambar == url ke gambar utk dorayaki
+
+## /toko-dorayaki
+* '/', method GET: mengembalikan seluruh toko dorayaki di database
+* '/add', method POST: menambahkan toko dorayaki baru ke database
+* '/:id', method GET: mengembalikan toko dorayaki sesuai id
+* '/:id', method DELETE: menghapus toko dorayaki sesuai id
+* '/update/:id', method POST: memperbarui(update) toko dorayaki sesuai id
+
+struktur toko dorayaki: {nama : String , jalan : String, kecamatan : String, provinsi : String}
