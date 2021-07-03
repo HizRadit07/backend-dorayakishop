@@ -23,3 +23,14 @@ note: gambar == url ke gambar utk dorayaki
 * '/update/:id', method POST: memperbarui(update) toko dorayaki sesuai id
 
 struktur toko dorayaki: {nama : String , jalan : String, kecamatan : String, provinsi : String}
+
+## /stok
+* '/', method GET: mengembalikan seluruh stok di database
+* '/add', method POST: menambahkan stok baru ke database
+* '/:id', method GET: mengembalikan stok sesuai id
+* '/:id', method DELETE: menghapus stok sesuai id
+* '/update/:id', method POST: memperbarui(update) stok sesuai id
+* '/findname/:nama', method GET: mengembalikan stok sesuai atribut nama
+
+struktur stok : {nama: String, rasa: String, jumlah: Number} <br/>
+note: nama == nama toko yang menjual, rasa == rasa dorayaki yang dijual
