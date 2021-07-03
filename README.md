@@ -34,3 +34,22 @@ struktur toko dorayaki: {nama : String , jalan : String, kecamatan : String, pro
 
 struktur stok : {nama: String, rasa: String, jumlah: Number} <br/>
 note: nama == nama toko yang menjual, rasa == rasa dorayaki yang dijual
+
+# Cara Menjalankan
+API dapat dijalankan menggunakan docker atau dengan install manual npm package yang diperlukan
+
+## Alternatif 1 Docker
+1. Pastikan docker sudah terinstall dan dapat dijalankan di mesin anda
+2. Clone repositori ini dan masuk ke repositori
+3. jalankan command berikut:
+        
+        docker-compose up --build
+        
+4. Jika benar, akan menunjukkan seperti ini:
+
+        api-server_1  | Server is running on port: 5000
+        api-server_1  | (node:26) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be      removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+        api-server_1  | (Use `node --trace-warnings ...` to show where the warning was created)
+        api-server_1  | MongoDB database connection established successfully
+       
+5. API dapat dijalankan dan dicoba menggunakan postman/software sejenis
