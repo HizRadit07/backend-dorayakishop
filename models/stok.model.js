@@ -20,6 +20,8 @@ const stokSchema = new Schema({
         timestamps: true,
 });
 
+stokSchema.index({nama:1, rasa:1}, {unique:true});
+
 const Stok = mongoose.model('Stok',stokSchema);
 
 module.exports = Stok;
