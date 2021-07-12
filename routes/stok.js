@@ -23,6 +23,12 @@ router.route('/add').post((req,res) => {
         .catch(err => res.status(400).json('Error: '+err));
 });
 
+router.route('/findcomplete/:name/:flavor').get((req,res) =>{
+    Stok.find({nama: req.params.name, rasa: req.params.flavor})
+        .then(stok => res.json(stok))
+        .catch(err => res.status(400).json('Error: '+err));
+});
+
 router.route('/:id').get((req,res) => {
     Stok.findById(req.params.id)
         .then(stok => res.json(stok))
