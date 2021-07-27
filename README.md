@@ -73,3 +73,7 @@ API dapat dijalankan menggunakan docker atau dengan install manual npm package y
         MongoDB database connection established successfully
              
 6. API dapat dijalankan dan dicoba menggunakan postman/software sejenis
+
+## Bonus Component
+API di deploy di heroku, dapat diakses lewat link berikut: https://backend-dorayakishop.herokuapp.com/
+note: dengan endpoint yang sama seperti di readme ini
